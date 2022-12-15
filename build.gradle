@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group 'org.solr.flexibleqp'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven {
+        url "https://maven.restlet.talend.com"
+    }
+}
+
+dependencies {
+    implementation ('org.apache.solr:solr-core:9.1.0')
+    implementation ('org.apache.lucene:lucene-queryparser:9.3.0')
+    testImplementation ('org.apache.solr:solr-test-framework:9.1.0')
+}
