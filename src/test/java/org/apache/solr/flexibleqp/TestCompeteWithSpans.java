@@ -4,7 +4,7 @@ import org.apache.solr.SolrTestCaseJ4;
 import org.apache.solr.servlet.SolrDispatchFilter;
 import org.junit.BeforeClass;
 
-public class TestCompeteWithSurround  extends SolrTestCaseJ4 {
+public class TestCompeteWithSpans extends SolrTestCaseJ4 {
     @BeforeClass
     public static void beforeClass() throws Exception {
         System.setProperty(SolrDispatchFilter.SOLR_INSTALL_DIR_ATTRIBUTE, TEST_HOME());
