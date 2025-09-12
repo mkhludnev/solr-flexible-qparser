@@ -15,7 +15,6 @@ public class TestCompeteWithSpans  extends SolrTestCaseJ4 {
         assertU(commit());
     }
 
-
     public void testFlex() {
         assertQ(req("q", "{!flex}unstemmed_text:fn:phrase(the fn:or(domain fn:phrase(domain name system)) is)", "indent", "true",
                 "debugQuery", "true", "explainOther", "id:3"), "//*[@numFound='2']");
