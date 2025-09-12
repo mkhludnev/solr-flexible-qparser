@@ -17,3 +17,7 @@ dependencies {
     implementation ('org.apache.lucene:lucene-queryparser:9.3.0')
     testImplementation ('org.apache.solr:solr-test-framework:9.1.0')
 }
+
+test {
+    systemProperty "test.solr.allowed.securerandom", "NativePRNG"
+}
